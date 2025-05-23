@@ -16,6 +16,7 @@ export default function PainterBookingsPage() {
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [loading, setLoading] = useState(true);
   const painterId = "1";
+  
   useEffect(() => {
     const fetchBookings = async () => {
       try {

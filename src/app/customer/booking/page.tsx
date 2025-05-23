@@ -16,7 +16,7 @@ export default function CustomerBookingsPage() {
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [loading, setLoading] = useState(true);
   // For demo purposes, i'll use a fixed customer ID
-  const customerId = 1;
+  const customerId = "1";
   useEffect(() => {
     const fetchBookings = async () => {
       try {

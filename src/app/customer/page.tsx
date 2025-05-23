@@ -29,7 +29,7 @@ export default function CustomerBookingPage() {
   const [bookingError, setBookingError] = useState<string | null>(null);
   const { date, startTime, endTime } = infoData;
   // For demo purposes, i'll use a fixed customer ID
-  const customerId = 1;
+  const customerId = "1";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

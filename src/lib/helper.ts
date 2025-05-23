@@ -118,6 +118,8 @@ class Store {
   }
 
   getCustomerBookings(customerId: string): Booking[] {
+    console.log("getfunc", customerId);
+    console.log("booking", this.bookings);
     return this.bookings.filter((b) => b.customerId === customerId);
   }
 

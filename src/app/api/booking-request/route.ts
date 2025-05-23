@@ -47,7 +47,9 @@ export async function GET(request: NextRequest) {
     const customerId = url.searchParams.get("customerId");
     const painterId = url.searchParams.get("painterId");
 
+    console.log("customerId", customerId);
     if (customerId) {
+      console.log("here here");
       const bookings = store.getCustomerBookings(customerId);
       return NextResponse.json(bookings);
     }
